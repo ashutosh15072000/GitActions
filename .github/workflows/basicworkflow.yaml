@@ -1,0 +1,14 @@
+name: GitActions
+
+on: [workflow_dispatch]
+
+jobs:
+  say-hello:
+  run-on: ubuntu-latest
+  steps:
+    - name: One line command
+    - run: echo "Hello from Git Actions"
+    - name: multi line command
+    - run:|
+          echo "we will add more steps soon"
+          echo "send me cake"
