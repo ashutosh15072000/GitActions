@@ -14,6 +14,7 @@ jobs:
          with:
           path: repo
         - uses: azure/login@v1
+          with:
             client-id: ${{AZURE_CLIENT_ID}}
             tenant-id: ${{AZURE_TENANT_ID}}
             subscription-id: ${{AZURE_SUBSCROPTION_ID}}
